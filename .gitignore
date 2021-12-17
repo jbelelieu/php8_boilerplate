@@ -1,0 +1,10 @@
+.env
+.php-cs-fixer.cache
+.phplint-cache
+.phpunit.result.cache
+.DS_Store
+clover.xml
+
+/.vscode
+/logs
+/vendor
