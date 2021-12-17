@@ -7,11 +7,11 @@
     },
     "require": {
         "php": "^8.0.8",
-        "vlucas/phpdotenv": "^5.4",
-        "phpdocumentor/phpdocumentor": "^3.1"
+        "phpdocumentor/phpdocumentor": "^3.1",
+        "vlucas/phpdotenv": "^5.4"
     },
     "require-dev": {
-        "overtrue/phplint": "^4.0",
+        "friendsofphp/php-cs-fixer": "^3.4",
         "phpunit/phpunit": "^9.5"
     },
     "scripts": {
@@ -19,7 +19,7 @@
             "./vendor/bin/phpdoc run -d /src -t /docs"
         ],
         "lint": [
-            "./vendor/bin/phplint"
+            "./vendor/bin/php-cs-fixer fix --config=./.php-cs-fixer-dist.php -v"
         ],
         "test": [
             "./vendor/bin/phpunit --testdox"
