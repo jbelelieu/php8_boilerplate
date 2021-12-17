@@ -1,6 +1,8 @@
 <?php
 
-class Main
+namespace App;
+
+class FormattingIncorrectLinting
 {
     public function __construct()
     {
@@ -8,6 +10,7 @@ class Main
 
     public function randomNumber(): int
     {
-        return rand(0, 10);
+        $hello = 'world!';
+        return rand(0, 9);
     }
 }
