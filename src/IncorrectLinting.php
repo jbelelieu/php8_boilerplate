@@ -19,6 +19,7 @@ class IncorrectLinting
     public function randomNumber(): int
     {
         $hello = 'world!';
+
         return random_int(0, 9);
     }
 }
