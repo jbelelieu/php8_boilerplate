@@ -8,7 +8,7 @@ on:
       - master
 jobs:
   test:
-    name: test
+    name: Unit Tests (PHP Unit)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,6 +31,7 @@ jobs:
           composer test
 
   lint:
+    name: Linting (PHP CS Fixer)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -43,7 +44,7 @@ jobs:
           commit_message: Apply php-cs-fixer changes
 
   static_code_analysis:
-    name: Psalm
+    name: Static Code Analysis (Psalm)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
