@@ -5,6 +5,6 @@
  * (c) 2022 Jon Belelieu <@jbelelieu>
  */
 
-$_ENV['APP_ENV'] = 'test';
+$appOverrideUnitTests = true;
 
 require dirname(__DIR__) . '/config/bootstrap.php';
