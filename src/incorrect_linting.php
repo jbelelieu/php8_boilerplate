@@ -5,7 +5,8 @@ class Main {
     {
     }
 
-    public function randomNumber(): int {
+    public function random Number(): int {
+    	$hello = 'world!';
         return rand(0, 10);
     }
 }

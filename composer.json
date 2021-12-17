@@ -1,0 +1,11 @@
+{
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require-dev": {
+        "overtrue/phplint": "^4.0"
+    }
+}
