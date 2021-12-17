@@ -26,7 +26,7 @@
             "./vendor/bin/php-cs-fixer --config=./.php-cs-fixer-dist.php -v"
         ],
         "test": [
-            "./vendor/bin/phpunit --testdox"
+            "export APP_ENV=test && ./vendor/bin/phpunit --testdox -c ./phpunit.xml.dist"
         ]
     }
 }

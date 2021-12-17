@@ -28,11 +28,12 @@ jobs:
 
       - name: Run tests
         run: |
-          export APP_ENV=test && composer test
+          composer test
 
   static_code_analysis:
     name: Static Code Analysis (Psalm)
     runs-on: ubuntu-latest
+    needs: [test]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
