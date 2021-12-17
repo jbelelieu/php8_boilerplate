@@ -41,3 +41,15 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply php-cs-fixer changes
+
+  static_code_analysis:
+    name: Psalm
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Psalm
+        uses: docker://vimeo/psalm-github-actions
+        with:
+          security_analysis: true

@@ -12,9 +12,13 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.4",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.15"
     },
     "scripts": {
+        "analysis": [
+            "./vendor/bin/psalm"
+        ],
         "document": [
             "./vendor/bin/phpdoc run -d /src -t /docs"
         ],
