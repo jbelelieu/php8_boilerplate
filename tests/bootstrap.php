@@ -5,4 +5,6 @@
  * (c) 2022 Jon Belelieu <@jbelelieu>
  */
 
-require dirname(__DIR__).'/config/bootstrap.php';
+$_ENV['APP_ENV'] = 'test';
+
+require dirname(__DIR__) . '/config/bootstrap.php';
