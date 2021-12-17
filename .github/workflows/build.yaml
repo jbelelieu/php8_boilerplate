@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         run: |
-          composer test
+          export APP_ENV=test && composer test
 
   static_code_analysis:
     name: Static Code Analysis (Psalm)
