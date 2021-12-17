@@ -1,2 +1,9 @@
+.env
 .phplint-cache
-vendor
+.phpunit.result.cache
+.DS_Store
+clover.xml
+
+/.vscode
+/logs
+/vendor
