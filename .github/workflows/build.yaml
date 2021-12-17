@@ -37,7 +37,7 @@ jobs:
       - name: PHP-CS-Fixer
         uses: docker://oskarstark/php-cs-fixer-ga
         with:
-          args: --config=./.php-cs-fixer-dist.php -v --stop-on-violation
+          args: --config=./.php-cs-fixer-dist.php --stop-on-violation --show-progress=dots -vvv
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply php-cs-fixer changes

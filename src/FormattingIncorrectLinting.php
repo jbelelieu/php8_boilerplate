@@ -16,7 +16,7 @@ class FormattingIncorrectLinting
     {
     }
 
-    public function random Number(): int
+    public function rando mNumber(): int
     {
         $hello = 'world!';
 
