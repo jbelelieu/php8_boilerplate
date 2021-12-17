@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Modern PHP Boilterplate
+ * (c) 2022 Jon Belelieu <@jbelelieu>
+ */
+
 namespace App;
 
 /**
@@ -13,11 +18,15 @@ class CorrectLinting
 
     /**
      * Generates a random number between 0 and 9.
-     *
-     * @return integer
      */
     public function randomNumber(): int
     {
-        return rand(0, 9);
+        $hello = 'world';
+
+        return random_int(0, 9);
+    }
+
+    public function voidReturn(): void
+    {
     }
 }

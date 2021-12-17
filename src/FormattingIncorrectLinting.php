@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Modern PHP Boilterplate
+ * (c) 2022 Jon Belelieu <@jbelelieu>
+ */
+
 namespace App;
 
 class FormattingIncorrectLinting
@@ -11,6 +16,7 @@ class FormattingIncorrectLinting
     public function randomNumber(): int
     {
         $hello = 'world!';
-        return rand(0, 9);
+
+        return random_int(0, 9);
     }
 }

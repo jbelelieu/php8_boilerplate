@@ -1,14 +1,22 @@
 <?php
 
+/*
+ * Modern PHP Boilterplate
+ * (c) 2022 Jon Belelieu <@jbelelieu>
+ */
+
 namespace App;
 
-class IncorrectLinting {
+class IncorrectLinting
+{
     public function __construct()
     {
     }
 
-    public function random Number(): int {
-    	$hello = 'world!';
-        return rand(0, 9);
+    public function randomNumber(): int
+    {
+        $hello = 'world!';
+
+        return random_int(0, 9);
     }
 }
