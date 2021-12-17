@@ -3,12 +3,13 @@
 /*
  * Modern PHP Boilterplate
  * (c) 2022 Jon Belelieu <@jbelelieu>
- *
- * This file should trigger a breaking error on lint.
  */
 
 namespace App;
 
+/**
+ * This file should trigger a breaking error on lint.
+ */
 class FormattingIncorrectLinting
 {
     public function __construct()

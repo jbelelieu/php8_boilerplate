@@ -3,12 +3,13 @@
 /*
  * Modern PHP Boilterplate
  * (c) 2022 Jon Belelieu <@jbelelieu>
- *
- * This file should be fixed, but not trigger an error on lint.
  */
 
 namespace App;
 
+/**
+ * This file should trigger a linting error, but not error out.
+ */
 class IncorrectLinting
 {
     public function __construct()

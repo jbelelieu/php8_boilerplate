@@ -19,7 +19,7 @@
             "./vendor/bin/phpdoc run -d /src -t /docs"
         ],
         "lint": [
-            "./vendor/bin/php-cs-fixer fix --config=./.php-cs-fixer-dist.php -v"
+            "./vendor/bin/php-cs-fixer --config=./.php-cs-fixer-dist.php -v"
         ],
         "test": [
             "./vendor/bin/phpunit --testdox"

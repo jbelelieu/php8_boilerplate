@@ -1,10 +1,8 @@
 <?php
 
-/*
+/**
  * Modern PHP Boilterplate
  * (c) 2022 Jon Belelieu <@jbelelieu>
- *
- * This file should be fine.
  */
 
 namespace App;

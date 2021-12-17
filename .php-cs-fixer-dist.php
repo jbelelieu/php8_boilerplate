@@ -40,7 +40,7 @@ $config
         'multiline_whitespace_before_semicolons' => false,
         'no_unset_cast' => true,
         'non_printable_character' => false,
-        'phpdoc_to_comment' => true,
+        'phpdoc_to_comment' => false,
         'pow_to_exponentiation' => true,
         'random_api_migration' => true,
         'void_return' => true,
