@@ -37,4 +37,4 @@ jobs:
       - name: PHP-CS-Fixer
         uses: docker://oskarstark/php-cs-fixer-ga
         with:
-          args: --config=./.php-cs-fixer-dist.php -vvv
+          args: fix --config=./.php-cs-fixer-dist.php -v
