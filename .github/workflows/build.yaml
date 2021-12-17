@@ -7,9 +7,28 @@ on:
     branches:
       - master
 jobs:
-  # test:
-  #   name: test
-  #   runs-on: ubuntu-latest
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Use composer cache if possible
+        uses: actions/cache@v2
+        with:
+          path: /tmp/composer-cache
+          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
+
+      - name: Install Composer
+        uses: php-actions/composer@v6
+        with:
+          php_version: 8.0.8
+          php_extensions: pdo_pgsql soap gd zip
+
+      - name: Run tests
+        run: |
+          composer test
   lint:
     runs-on: ubuntu-latest
     steps:
