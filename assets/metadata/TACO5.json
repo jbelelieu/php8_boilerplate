@@ -1,0 +1,21 @@
+{
+    "name": "Max the Taco",
+    "description": "Max the NFT taco!",
+    "image": "https://my.taco.haus/assets/images/TACO5.png",
+    "external_uri": "https://my.taco.haus/view/TACO5",
+    "attributes": {
+        "level": 100,
+        "shell": {
+            "isHardShell": true,
+            "type": "gold"
+        },
+        "toppings": [
+            "lettuce",
+            "guac",
+            "tomato"
+        ],
+        "sauces": [
+            "nuclear"
+        ]
+    }
+}

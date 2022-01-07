@@ -8,6 +8,7 @@
 // Load composer autoload file
 require dirname(__DIR__) . '/vendor/autoload.php';
 require dirname(__DIR__) . '/config/globalFunctions.php';
+require dirname(__DIR__) . '/config/routes.php';
 
 // Load environment variables
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__), isset($appOverrideUnitTests) ? '.env.test' : '.env');

@@ -1,0 +1,21 @@
+{
+    "name": "Jon the Taco",
+    "description": "Jon the NFT taco!",
+    "image": "https://my.taco.haus/assets/images/TACO4.png",
+    "external_uri": "https://my.taco.haus/view/TACO4",
+    "attributes": {
+        "level": 100,
+        "shell": {
+            "isHardShell": true,
+            "type": "gold"
+        },
+        "toppings": [
+            "lettuce",
+            "guac",
+            "tomato"
+        ],
+        "sauces": [
+            "nuclear"
+        ]
+    }
+}
